@@ -4,7 +4,7 @@ from typing import List
 
 app = FastAPI(title="API DE MACHINE LEARNING - predecir numero de logueos en una fecha", version="1.0")
 
-
+#
 @app.post("/predict", response_model=List[OutputModel])
 async def predecir_probabilidad(inputs: List[InputModel]):
     respuestas = list()
